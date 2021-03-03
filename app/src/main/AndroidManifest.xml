@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.MacRes">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="MAC Reservation"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.example.MacRes.FM_ViewSpecificReservation"></activity>
+        <activity android:name="com.example.MacRes.FMViewReservationsActivity" />
+        <activity android:name="com.example.MacRes.MakePayment" />
+        <activity android:name="com.example.MacRes.User_ViewSpecificViolation" />
+        <activity android:name="com.example.MacRes.UserViewViolationsActivity" />
+        <activity android:name="com.example.MacRes.User_ViewSpecificReservation" />
+        <activity android:name="com.example.MacRes.ModifyReservation" />
+        <activity android:name="com.example.MacRes.UserRequestReservation" />
+        <activity android:name="com.example.MacRes.User_ViewSpecificFacility" />
+        <activity android:name="com.example.MacRes.UserViewFacilitiesActivity" />
+        <activity android:name="com.example.MacRes.ChargeDeposit" />
+        <activity android:name="com.example.MacRes.FMSetNoShowsActivity" />
+        <activity android:name="com.example.MacRes.FM_ViewSpecificFacility" />
+        <activity android:name="com.example.MacRes.FMViewFacilitiesActivity" />
+        <activity android:name="com.example.MacRes.FMAddFacility" />
+        <activity android:name="com.example.MacRes.ReportViolation" />
+        <activity android:name="com.example.MacRes.FM_ViewSpecificUser" />
+        <activity android:name="com.example.MacRes.FMViewUsersActivity" />
+        <activity android:name="com.example.MacRes.ViewUserReservationsActivity" />
+        <activity android:name="com.example.MacRes.Admin_ViewSpecificUser" />
+        <activity android:name="com.example.MacRes.AdminViewUsersActivity" />
+        <activity android:name="com.example.MacRes.ViewProfileActivity" />
+        <activity android:name="com.example.MacRes.UserHomeActivity" />
+        <activity android:name="com.example.MacRes.FMHomeActivity" />
+        <activity android:name="com.example.MacRes.AdminHomeActivity" />
+        <activity android:name="com.example.MacRes.RegisterActivity" />
+        <activity android:name="com.example.MacRes.LoginActivity" />
+        <activity android:name="com.example.MacRes.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

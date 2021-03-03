@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="activity_headBar">#3F51B5</color>
+    <color name="dark_activity_headBar">#081A7E</color>
+    <color name="activity_background">#FAD695</color>
+    <color name="light_blue">#899AFF</color>
+    <color name="orange">#FF9800</color>
+    <color name="light_orange">#ffb84d</color>
+    <color name="dark_orange">#DF870A</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="gray">#bfbfbf</color>
+    <color name="lighter_orange">#ffcc80</color>
+</resources>

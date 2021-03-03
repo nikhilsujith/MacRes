@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FMAddFacility">
+
+    <TextView
+        android:id="@+id/addFacilityTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Facility"
+        style="@style/titles_textView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.027" />
+
+    <TextView
+        android:id="@+id/facilityNameTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Facility Name: "
+        style="@style/general_textView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addFacilityTV"
+        app:layout_constraintVertical_bias="0.057" />
+
+    <Button
+        android:id="@+id/addFacilityBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Facility"
+        style="@style/Button_Style"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.944"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.971" />
+
+    <EditText
+        android:id="@+id/facilityNameET"
+        style="@style/small_editText_style"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:hint="Facility Name"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.796"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addFacilityTV"
+        app:layout_constraintVertical_bias="0.04" />
+
+    <TextView
+        android:id="@+id/facilityTypeTV"
+        style="@style/general_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Facility Type: "
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.049"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/facilityNameTV"
+        app:layout_constraintVertical_bias="0.087" />
+
+    <Spinner
+        android:id="@+id/facilityTypeSpinner"
+        style="@style/small_editText_style"
+        android:layout_width="200dp"
+        android:layout_height="45dp"
+        android:entries="@array/facilityType_array"
+        android:prompt="@string/facilityTypes_prompt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.796"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/facilityNameET"
+        app:layout_constraintVertical_bias="0.039" />
+
+    <TextView
+        android:id="@+id/timeIntervalTV"
+        style="@style/general_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Time Interval: "
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.049"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/facilityTypeTV"
+        app:layout_constraintVertical_bias="0.1" />
+
+    <Spinner
+        android:id="@+id/timeIntervalSpinner"
+        style="@style/small_editText_style"
+        android:layout_width="200dp"
+        android:layout_height="45dp"
+        android:entries="@array/facilityTimeInterval_array"
+        android:prompt="@string/facilityTimeInterval_prompt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.796"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/facilityTypeSpinner"
+        app:layout_constraintVertical_bias="0.053" />
+
+    <TextView
+        android:id="@+id/durationTV"
+        style="@style/general_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Duration: "
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.045"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timeIntervalTV"
+        app:layout_constraintVertical_bias="0.127" />
+
+    <Spinner
+        android:id="@+id/durationSpinner"
+        style="@style/small_editText_style"
+        android:layout_width="200dp"
+        android:layout_height="45dp"
+        android:entries="@array/facilityDuration_array"
+        android:prompt="@string/facilityDuration_prompt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.796"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timeIntervalSpinner"
+        app:layout_constraintVertical_bias="0.058" />
+
+    <TextView
+        android:id="@+id/venueTV"
+        style="@style/general_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Venue: "
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.043"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/durationTV"
+        app:layout_constraintVertical_bias="0.141" />
+
+    <Spinner
+        android:id="@+id/venueSpinner"
+        style="@style/small_editText_style"
+        android:layout_width="200dp"
+        android:layout_height="45dp"
+        android:entries="@array/facilityVenue_array"
+        android:prompt="@string/facilityVenue_prompt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.796"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/durationSpinner"
+        app:layout_constraintVertical_bias="0.06" />
+
+    <TextView
+        android:id="@+id/depositTV"
+        style="@style/general_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Deposit: "
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.044"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/venueTV"
+        app:layout_constraintVertical_bias="0.182" />
+
+    <Spinner
+        android:id="@+id/depositSpinner"
+        style="@style/small_editText_style"
+        android:layout_width="200dp"
+        android:layout_height="45dp"
+        android:entries="@array/facilityDeposit_array"
+        android:prompt="@string/facilityDeposit_prompt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.796"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/venueSpinner"
+        app:layout_constraintVertical_bias="0.103" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
